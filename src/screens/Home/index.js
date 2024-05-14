@@ -25,13 +25,13 @@ export const Home = () =>{
                     <Text style={styles.categoryText}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text style={styles.categoryText}>TV Shows</Text>
+                    <Text style={styles.categoryText}>Shows de TV</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text style={styles.categoryText}>Movies</Text>
+                    <Text style={styles.categoryText}>Filmes</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text style={styles.categoryText}>Kids</Text>
+                    <Text style={styles.categoryText}>Infantis</Text>
                 </TouchableOpacity>
             </View>
 
@@ -43,7 +43,7 @@ export const Home = () =>{
                 </TouchableOpacity>
 
                 {/* Continue Whatching */}
-                <Text style={styles.movieText}>Continue Whatching</Text>
+                <Text style={styles.movieText}>Continuar assistindo</Text>
                 <FlatList 
                     data={MOVIESWATCHING} 
                     keyExtractor={(item) => item.id} 
@@ -54,7 +54,7 @@ export const Home = () =>{
                 />
 
                 {/* Crime Movies */}
-                <Text style={styles.movieText}>Crime Movies</Text>
+                <Text style={styles.movieText}>Lançamentos</Text>
                 <FlatList 
                     data={MOVIESCRIME} 
                     keyExtractor={(item) => item.id} 
@@ -65,7 +65,7 @@ export const Home = () =>{
                 />
 
                 {/* Whatch in your language */}
-                <Text style={styles.movieText}>Whatch in your language</Text>
+                <Text style={styles.movieText}>Assista em sua lingua</Text>
                 <FlatList 
                     data={MOVIESWATCH} 
                     keyExtractor={(item) => item.id} 
